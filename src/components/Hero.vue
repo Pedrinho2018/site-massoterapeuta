@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const imagens = [
-  '/images/massagem-1.jpg',
-  '/images/massagem-2.jpg'
+  `${baseUrl}images/massagem-1.jpg`,
+  `${baseUrl}images/massagem-2.jpg`
 ]
 
 const slideAtual = ref(0)

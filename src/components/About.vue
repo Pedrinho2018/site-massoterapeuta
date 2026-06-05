@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const baseUrl = import.meta.env.BASE_URL
+</script>
+
 <template>
   <section id="sobre" class="py-24 bg-white">
     <div class="container mx-auto px-4">
@@ -6,7 +10,7 @@
         <div class="relative">
           <div class="rounded-3xl overflow-hidden shadow-xl">
             <img
-              src="/images/empresa/zen%20bamboo%20towels.jpg"
+              :src="`${baseUrl}images/empresa/zen%20bamboo%20towels.jpg`"
               alt="Ambiente de bem-estar com toalhas e bambu"
               class="w-full h-105 object-cover"
             />

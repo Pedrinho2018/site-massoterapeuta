@@ -5,9 +5,11 @@ const whatsappLink =
 const avaliacaoLink =
   'https://wa.me/5566999121068?text=Olá,%20quero%20agendar%20uma%20avaliação%20gratuita%20para%20saber%20qual%20massagem%20é%20ideal%20para%20mim.'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const servicos = [
   {
-    imagem: '/images/servicos/Relaxamento%20e%20Estresse.jpg',
+    imagem: `${baseUrl}images/servicos/Relaxamento%20e%20Estresse.jpg`,
     etiqueta: 'Mais procurado',
     titulo: 'Relaxamento e Estresse',
     descricao:
@@ -20,7 +22,7 @@ const servicos = [
     tempo: '50 min'
   },
   {
-    imagem: '/images/servicos/massage%20therapist%20hands%20leg.jpg',
+    imagem: `${baseUrl}images/servicos/massage%20therapist%20hands%20leg.jpg`,
     etiqueta: 'Dores e tensão',
     titulo: 'Massagem Terapêutica',
     descricao:
@@ -33,7 +35,7 @@ const servicos = [
     tempo: '50 min'
   },
   {
-    imagem: '/images/servicos/leg%20massage%20athlete.jpg',
+    imagem: `${baseUrl}images/servicos/leg%20massage%20athlete.jpg`,
     etiqueta: 'Para atletas',
     titulo: 'Massagem Esportiva',
     descricao:
@@ -46,7 +48,7 @@ const servicos = [
     tempo: '60 min'
   },
   {
-    imagem: '/images/servicos/neck%20massage%20pain.jpg',
+    imagem: `${baseUrl}images/servicos/neck%20massage%20pain.jpg`,
     etiqueta: 'Alívio muscular',
     titulo: 'Dores no Pescoço',
     descricao:
